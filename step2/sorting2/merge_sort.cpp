@@ -7,10 +7,10 @@ void merge(int arr[],int start, int mid, int end){
 
 
     int l_size = mid-start+1;
-    int left[l_size + 1];
+    int left[l_size];
 
     int r_size = end-(mid+1) + 1;
-    int right[r_size + 1];
+    int right[r_size];
 
     for(int i=0;i<l_size;i++){
         left[i] = arr[start+i];
@@ -55,10 +55,10 @@ void mergeSort(int arr[],int start,int end){
 
 int main(){
 
-    int arr[] = {13,46,24,52,20,9};
+    int arr[] = {4, 1 ,3, 9, 7};
     mergeSort(arr,0,5);
 
-    for(int i=0;i<6;i++){
+    for(int i=0;i<5;i++){
         cout << arr[i] << " ";
     }
 
